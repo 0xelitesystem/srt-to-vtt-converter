@@ -26,6 +26,10 @@ The converter normalizes line endings, splits the text into cue blocks on blank 
 
 Everything runs in your browser. Files you load with the file picker are read locally with the FileReader API and never uploaded. There are no network requests, no analytics, and no external scripts.
 
+## More
+
+Part of a catalog of single-file browser tools and plain-language references, all MIT licensed and dependency-free: [0xelitesystem.github.io](https://0xelitesystem.github.io/). Built by [elitesystem.ai](https://elitesystem.ai).
+
 ## License
 
 MIT. Copyright 0xelitesystem 2026.
