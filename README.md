@@ -2,9 +2,18 @@
 
 Convert subtitle files between SubRip (.srt) and WebVTT (.vtt) in both directions. The input format is auto-detected, multi-line cues and blank lines are handled, and everything runs in your browser with no external dependencies. Works offline.
 
-## Live demo
+**Live demo:** https://0xelitesystem.github.io/srt-to-vtt-converter/
 
-https://0xelitesystem.github.io/srt-to-vtt-converter/
+## Use
+
+1. Paste subtitle text into the input, click Load file to read a .srt or .vtt file from disk, or click Load example.
+2. Choose whether to keep cue indices as VTT cue ids.
+3. Click Convert, or press Ctrl or Cmd plus Enter. The direction is detected from the input.
+4. Click Copy or Download to take the result.
+
+## Why this exists
+
+Web video players want WebVTT while many subtitle editors export SubRip, and most online converters ask you to upload the file to their server first. This one converts locally in a single HTML file, with no tracking, released under the MIT license.
 
 ## Features
 
@@ -25,6 +34,21 @@ The converter normalizes line endings, splits the text into cue blocks on blank 
 ## Privacy
 
 Everything runs in your browser. Files you load with the file picker are read locally with the FileReader API and never uploaded. There are no network requests, no analytics, and no external scripts.
+
+If you use the theme toggle, your light or dark choice is saved in your browser's localStorage under the key `theme`. Nothing else is stored.
+
+## Run locally
+
+```
+git clone https://github.com/0xelitesystem/srt-to-vtt-converter
+cd srt-to-vtt-converter
+```
+
+Open `index.html` in a browser, or serve the folder with `python -m http.server` and visit http://localhost:8000.
+
+## Build
+
+No build step. The whole tool is one `index.html` file.
 
 ## More
 
